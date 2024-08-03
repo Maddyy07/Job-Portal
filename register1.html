@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Job Recommendation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            position: scroll;
+            background-repeat: no-repeat;
+            background-size: 1700px 1300px;
+            
+        }
+        h3{
+            padding-left: 10px;
+        }
+        label{
+            padding-left: -20px;
+        }
+        form{
+             padding-left:25%;
+        }
+
+        .topnav {
+      overflow: hidden;
+      background-color: rgb(9, 10, 10);
+      position: scroll;
+      width: 100%;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-right:3px;
+      border-radius:25px;
+      border-style:unset;
+    }
+
+    .topnav a {
+      float: right;
+      display: block;
+      color: #f7f7f7;
+      text-align: center;
+      padding:15px 25px 14px 18px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: rgb(255, 255, 255);
+      border-radius:20px;
+      color: rgb(0, 0, 0);
+    }
+      .border{
+        border: 10px ridge black;
+      }  
+        .header {
+            
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .footer {
+            background-color: #636363;
+            width: 41cm;
+            position: absolute;
+            top:27cm;
+            left:-10cm;
+            text-align: center;
+        }
+        .button {
+  background-color: #49c04d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+    </style>
+<script>
+    function a(){ 
+        confirm("YOUR INFORMARION HAS BEEN SAVED");
+    }
+</script>
+</head>
+
+<body style="background-image: url(https://static.storyweaver.org.in/illustrations/58816/large/3.jpg);">
+<br>
+<div class="topnav">
+    
+    <a href="register.html">Register</a>
+    <a href="queries.html">Queries</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About Us</a>
+    <a href="main.html">Home</a>
+
+</div>
+
+<br><br>
+<h1 style="text-align:center">REGISTRATION</h1>
+<div class="border" style="background:rgb(255, 255, 255);width:60%;height:140%;position:absolute;top:5cm;right:7cm;box-shadow: 50px 20px 50px #636363;">
+    <H3>10TH QUALIFICATION</H3>
+    <form action="progress2.html" method="get">
+        <label><b> DID YOU COMPLETED YOUR 10TH STD?</b></label>
+        <input type="radio" name="10th" value="yes">YES
+        <input type="radio" name="10th" value="no">NO
+        <br><br>
+        <br>
+    
+        <label><b>SCHOOL NAME: </b></label><input style="width:40%;height: 35px;position: absolute;right:100px;top: 105px;" type="text" placeholder="School name" >
+        <br><br><br>
+        
+    
+        <label><b>YEAR OF PASSING : </b></label><input   style="width:40%;height: 35px;position: absolute;right:100px;top: 160px;" type="year" placeholder="Year">
+        <br><br>
+        <br>
+    
+        <label><b>MARK OBTAINED:  </b></label><input  style="width:40%;height: 35px;position: absolute;right:100px;top:215px;" type="number">
+        <br></br>
+        <br>
+    
+        <label><b>TOTAL MARKS: </b></label><input style="width:40%;height: 35px;position: absolute;right:100px;top: 265px;" type="number">
+        <br></br>
+        <br>
+    
+        <label><b>10TH ORIGINAL<br>(MARK SHEET)</b></label><br><input style="width:40%;height: 35px;position: absolute;right:100px;top: 335px;" type="file"></br>
+        <br></br>
+    
+    
+    <H3>12TH QUALIFICATION</H3>
+    
+        <label><b> DID YOU COMPLETED YOUR 12TH STD?</b></label>
+        <input type="radio" name="10th" value="yes">YES
+        <input type="radio" name="10th" value="no">NO
+        <br><br>
+        <br>
+    
+        <label><b>SCHOOL NAME: </b></label><input style="width:40%;height: 35px;position: absolute;right:100px;top: 535px;" type="text" placeholder="School name" style="width:40%">
+        <br><br>
+        <br>
+    
+        <label><b>YEAR OF PASSING : </b></label><input  style="width:40%;height: 35px;position: absolute;right:100px;top: 590px;" type="year" placeholder="Year">
+        <br><br>
+        <br>
+    
+        <label><b>MARK OBTAINED:  </b></label><input style="width:40%;height: 35px;position: absolute;right:100px;top: 645px;" type="number">
+        <br></br>
+        <br>
+    
+        <label><b>TOTAL MARKS: </b></label><input style="width:40%;height: 35px;position: absolute;right:100px;top: 695px;" type="number">
+        <br></br>
+        <br>
+    
+        <label><b>12TH ORIGINAL<br> (MARK SHEET)</b></label><br><input style="width:40%;height: 35px;position: absolute;right:100px;top: 765px;" type="file"></br>
+        <br></br>
+
+    
+        <br>
+        <button class="button" onclick="location.reload()" style="position:absolute;left:10px;">RELOAD</button>
+        <button class="button" onclick="a()" style="position:absolute;left:170px;">SAVE</button>
+        <input type="submit" value="NEXT" class="button" style="position: absolute;right:10px"></submit>
+    </form>
+        <div class="footer">
+            <p id="copyright">Copyright &copy; 2022 by The JobHunter.</p>
+        </div>
+    </div>
+        </body>
+
+</html>

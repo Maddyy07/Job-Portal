@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title style="font-style:italic">JOB HUNTER</title>
+  <link rel="shortcut icon" href="https://www.linkpicture.com/q/Screenshot-2022-07-01-125316.png" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+</head>
+<body >
+<br>
+<div class="topnav">
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+      style="position:absolute;left:-1.2cm;top:0.39cm;">X</a>
+<button style=" border: none;" onclick="document.getElementById('id01').style.display='block'"  >
+  <img src="http://cdn.onlinewebfonts.com/svg/img_329115.png"style="position:absolute; top:3; right:2.1;" height="30px" width="30px">
+</button>
+    <a href="index.html" style="position:absolute;left:-0.5cm; top:3.5cm;"><img src="https://icons.getbootstrap.com/assets/icons/gear.svg" height="30px" width="30px"></a><br>
+    <br><br><br><br><br><br><br><br><br>
+    <a href="queries.html" style="position:absolute;left:-0.5cm; top:5cm;"><img src="
+      https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZC0tyh-cAv_gddLA96v10lzPe896Ypqc1aRW6us2NigucJekalF7VRsJHXXJ3JHH1rA&usqp=CAU.jpg"
+      height="30px" width="30px"></a><br>
+    <a href="https://www.google.com/" style="position:absolute;left:-0.5cm; top:7.5cm;"><img src="
+      https://uxwing.com/wp-content/themes/uxwing/download/09-controller-and-music/power-off.png" height="30px"
+      width="30px"></a><br>
+  </div>
+
+
+  <div id="id01" class="modal">
+    <form class="modal-content animate" action="success.html" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="http://cdn.onlinewebfonts.com/svg/img_329115.png" height="400px" width="200px"alt="Avatar" class="avatar">
+      </div>
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+      
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#020202">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" style="background-color: darkseagreen ;width:100px; height: 35px; position: absolute ; right: 30px;" >Login</button>
+       
+      </div>
+    </form>
+  </div>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <a href="Register.html">Register</a>
+    <a href="queries.html">Queries</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About Us</a>
+    <a href="main.html">Home</a>
+  </div>
+</div>
+</div>
+
+<div class="slideshow"><img src="https://www.linkpicture.com/q/Screenshot-2022-07-01-125316.png" style="position:absolute; left:0; top:15px;" width="150px" height="100px" ></div>
+<div><div class="slideshow-container">
+  <div class="mySlides"  >
+    <br>
+    <q style="position:absolute; left: 300px; top: 275px;">THE ONLY WAY TO DO GREAT WORK IS TO LOVE WHAT YOU DO</q>
+    <br>
+    <p class="author">- STEVE JOBS</p>
+    <img  height="500px" width="fixed" src="https://d1oqwsnd25kjn6.cloudfront.net/production/curio_primary_images/12566/original/Feb._25_2018-SteveJobs.jpg?1518809726.jpg" style="height: 400px;width: 350px;position: absolute; right: 6.5cm; top: 160px">
+  </div> 
+  <div class="mySlides">
+    <video width="1000px" height="550px" controls>
+      <source src="sk.mp4" type="video/mp4">
+    </video>
+  </div>   
+   
+
+  <div class="mySlides">
+    <div><img src="https://www.thesslstore.com/blog/wp-content/uploads/2020/01/fake-jobs.jpg" style=" height: 340px; width:50%; position: absolute; top:150px; left: 100px; "></div>
+    <div> 
+         <p  style="position:absolute; top:280px; left:950px;" >CATCH YOUR DREAM HERE!</p>
+         <img src="https://www.nicepng.com/png/detail/266-2660147_follow-us-png.png" width="200px" height="200px" style="position:absolute; top:120px; right: 60px;">
+         <h1 style="position:absolute; top:300px; left:1000px;">FOLLOW US TO ATTAIN SUCCESS</h1>
+        </div>
+  
+  </div>
+
+      <a class="prev" onclick="plusSlides(-1)"><</a>
+      <a class="next" onclick="plusSlides(1)">></a>
+
+    </div>
+
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+</div>
+
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br>
+ -->
+
+  <script>
+    function openNav() {
+  document.getElementById("mySidebar").style.width = "60px";
+  document.getElementById("main").style.marginLeft = "0px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+   
+  </script>
+
+
+<div class="fullmain">
+<div class="grid">
+  <ul class="cards">
+    <li>
+      <a href="" class="card">
+        <img src="https://mms.businesswire.com/media/20220421005466/en/1427984/23/TCSLogo2.jpg" style="padding-bottom: 60px;"class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <div class="card__header-text">
+              <h3 class="card__title"><b>TATA CONSULTANCY SERVICES</b></h3>            
+              <span class="card__status"><img src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-vector-location-icon-png-image_1028445.jpg"  class="location" alt="location">COIMBATORE</span>
+            </div>
+          </div>
+          <p class="card__description">JOB OFFERED:5,89,6314</p>
+        </div>
+      </a>      
+    </li>
+
+    <li>
+      <a href="" class="card">
+        <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" height="80px"style="padding-bottom: 70px;" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <div class="card__header-text">
+              <h3 class="card__title"><b>APPLE</b></h3>            
+              <span class="card__status"><img src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-vector-location-icon-png-image_1028445.jpg" class="location" alt="location">CHENNAI</span>
+            </div>
+          </div>
+          <p class="card__description">JOB OFFERED:4126</p>
+        </div>
+      </a>      
+    </li>
+
+    <li>
+      <a href="" class="card">
+        <img src="https://1000logos.net/wp-content/uploads/2021/09/Reliance-Industries-Limited-Logo.png"style="padding-bottom: 80px;" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <div class="card__header-text">
+              <h3 class="card__title"><b>RELIANCE INDUSTRIES LIMT</b></h3>            
+              <span class="card__status"><img src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-vector-location-icon-png-image_1028445.jpg" class="location" alt="location">KOCHI</span>
+            </div>
+          </div>
+          <p class="card__description">JOB OFFERED:55262</p>
+        </div>
+      </a>      
+    </li>
+
+
+    <li>
+      <a href="" class="card">
+        <img src="https://assets.turbologo.com/blog/en/2021/07/26073303/unilever-logo-2004.png"style="padding-bottom: 60px;"  class="card__image" alt="" />
+        <div class="card__overlay">        
+          <div class="card__header">
+            <div class="card__header-text">
+              <h3 class="card__title">HINDUSTAN PRIVATE LIMT</h3>
+              <span class="card__status"><img src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-vector-location-icon-png-image_1028445.jpg" class="location" alt="location">VIZAG</span>
+            </div>
+          </div>
+          <p class="card__description">JOB OFFERED:56,985</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="" class="card">
+        <img src="https://download.logo.wine/logo/Hero_MotoCorp/Hero_MotoCorp-Logo.wine.png" style="padding-bottom: 100px;"  class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <div class="card__header-text">
+              <h3 class="card__title">HERO MOTOCORP</h3>
+              <span class="card__tagline"></span>            
+              <span class="card__status"><img src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-vector-location-icon-png-image_1028445.jpg" class="location">PUNE</span>
+            </div>
+          </div>
+          <p class="card__description">JOB OFFERED:4,51,282</p>
+        </div>
+      </a>
+    </li> 
+
+    <li>
+      <a href="" class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png"style="padding-bottom: 80px;" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <div class="card__header-text">
+              <h3 class="card__title"><b>ADANI POWER</b></h3>            
+              <span class="card__status"><img src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-vector-location-icon-png-image_1028445.jpg" class="location" alt="location">ALLAHABAD</span>
+            </div>
+          </div>
+          <p class="card__description">JOB OFFERED:625</p>
+        </div>
+      </a>      
+    </li>
+
+    <li>
+      <a href="" class="card">
+        <img src="https://static.startuptalky.com/2021/05/Ambuja-Cement-startuptalky.jpg"style="padding-bottom: 80px;" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <div class="card__header-text">
+              <h3 class="card__title"><b>AC TRADERS</b></h3>            
+              <span class="card__status"><img src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-vector-location-icon-png-image_1028445.jpg" class="location" alt="location">VISHAGAPATTINAM</span>
+            </div>
+          </div>
+          <p class="card__description">JOB OFFERED:55</p>
+        </div>
+      </a>      
+    </li>
+
+    <li>
+      <a href="" class="card">
+        <img src="https://channelpostmea.com/wp-content/uploads/2013/12/Tech-Mahindra-Logo.jpg"style="padding-bottom: 80px;" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <div class="card__header-text">
+              <h3 class="card__title"><b>TECH MAHINDRA LMT</b></h3>            
+              <span class="card__status"><img src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-vector-location-icon-png-image_1028445.jpg" class="location" alt="location">AGRA</span>
+            </div>
+          </div>
+          <p class="card__description">JOB OFFERED:262</p>
+        </div>
+      </a>      
+    </li>
+
+    <li>
+      <a href="" class="card">
+        <img src="https://www.thehindubusinessline.com/info-tech/svi0bk/article33135478.ece/alternates/LANDSCAPE_1200/bharti-infratel.jpg"style="padding-bottom: 80px;" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <div class="card__header-text">
+              <h3 class="card__title"><b>BHARTI INFRATEL LIMT</b></h3>            
+              <span class="card__status"><img src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-vector-location-icon-png-image_1028445.jpg" class="location" alt="location">CHANDIGARH</span>
+            </div>
+          </div>
+          <p class="card__description">JOB OFFERED:55262</p>
+        </div>
+      </a>      
+    </li>
+
+    <li>
+      <a href="" class="card">
+        <img src="https://cdn.siasat.com/wp-content/uploads/2019/07/Bajaj_Finserv-1.jpg"style="padding-bottom: 80px;" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <div class="card__header-text">
+              <h3 class="card__title"><b>BAJAJ FINSERV</b></h3>            
+              <span class="card__status"><img src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-vector-location-icon-png-image_1028445.jpg" class="location" alt="location">BANGALORE</span>
+            </div>
+          </div>
+          <p class="card__description">JOB OFFERED:6007</p>
+        </div>
+      </a>      
+    </li>
+
+
+  </ul>
+</div>
+<center><div ><h1> LIST OF VACANCIES IN COMPANIES </h1>
+  <div>
+    <ul type="none">
+      <li class=" liststl"type="none">
+      <a class="linkhide" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiX8_79itf4AhW14FwKHWWyBlEYABAAGgJjZQ&ae=2&ohost=www.google.com&cid=CAESbeD2k7IM2wVuMeBNZLSizKFJ5DvMUQJ1iZbd5Cx2qjw3DQocaV8MVpkGFYBoFpsDstEtA1ArEClAfHmdg7XIfRa4B8WuXtWDekaiEJRmyye_9VwicZM7U3CdP_BTgXihkTf-ytzCYxemgVOkI2Q&sig=AOD64_1GE0E8EMORT1C8_m2wTwIuOcNgfA&q&adurl&ved=2ahUKEwim1vj9itf4AhU1R7gEHd5DBScQ0Qx6BAgCEAE" target="_blank"><h2>1. DATA SCIENTISTs</h2></a>
+      </li>
+      <li class="liststl"><a  class="linkhide"  href="https://in.indeed.com/jobs?q=Android%20Developer&l=Work%20From%20Home&mna=5&aceid&gclid=CjwKCAjwk_WVBhBZEiwAUHQCmdaogrs269rnnXceG0csaYDVKw6ji3Z3LDVLIu-hCK_CoAU6vUd1oRoCYSsQAvD_BwE&vjk=ad3edc0c5cc29993" target="_blank"><h2>2.ANDROID DEVELOPER</h2></a> </li>
+      <li class="liststl"><a  class="linkhide" href="https://in.indeed.com/Front-End-Developer-jobs?vjk=4fe2ea14deba9661" target="_blank"><h2>3.FRONT END DEVELOPER</h2></a> </li>
+      <li class="liststl"><a  class="linkhide"  href="https://in.indeed.com/Full-Stack-Developer-jobs?vjk=049a5464f409510b"target="_blank"><h2>4.FULL STACK DEVELOPER</h2></a> </li>
+      <li class="liststl"><a  class="linkhide"  href="https://in.indeed.com/Software-Engineer-jobs?vjk=049a5464f409510b" target="_blank"><h2>5.SOFTWARE ENGINEER</h2></a> </li>
+      <li class="liststl"><a  class="linkhide"  href="https://in.indeed.com/PHP-Internship-jobs?vjk=89103b435171ffba" target="_blank"><h2>6.PHP INTERN DEVELOPER</h2></a> </li>
+      <li class="liststl"><a  class="linkhide"  href="https://in.indeed.com/Fresher,-Graduate,-Backend-jobs-in-Coimbatore,-Tamil-Nadu" target="_blank"><h2>7.BACK END DEVELOPER</h2></a> </li>
+      <li class="liststl"><a  class="linkhide" href="https://www.indeed.com/q-Blockchain-Analyst-jobs.html" target="_blank"><h2>8.BLOCK CHAIN ANALYST</h2></a> </li>
+      <li class="liststl"><a  class="linkhide" href="https://www.toptal.com/freelance-jobs/developers/web?gclid=CjwKCAjwk_WVBhBZEiwAUHQCmdEitZTzJ6de0t0NAhw7C86-bsJB1BoCa0xPXOXs69r9YlYoNgm7rhoC3ioQAvD_BwE" target="_blank"><h2>9.WEB PAGE CREATOR</h2></a> </li>
+      <li class="liststl"><a  class="linkhide" href="https://www.naukri.com/photographer-jobs" target="_blank"><h2>10.PHOTOGRAPHER</h2></a> </li>
+    </ul>
+  </div>
+</div>
+</center>
+
+
+<footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">JOB HUNTER</h1>
+
+    <h2>Contact</h2>
+
+    <address>
+      5534 Somewhere In. The World 22193-10212<br>
+
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Online</a>
+        </li>
+
+        <li>
+          <a href="#">Print</a>
+        </li>
+
+        <li>
+          <a href="#">Alternative Ads</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">Technology</h2>
+
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="#">Hardware Design</a>
+        </li>
+
+        <li>
+          <a href="#">Software Design</a>
+        </li>
+
+        <li>
+          <a href="#">Digital Signage</a>
+        </li>
+
+        <li>
+          <a href="#">Automation</a>
+        </li>
+
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+
+        <li>
+          <a href="#">IoT</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav__item">
+      <h2 class="nav__title">Legal</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="legal">
+    <p>© 2048 Something. All rights reserved.</p>
+
+    <div class="legal__links">
+      <span>Made with <span class="heart">♥</span> remotely by JOB HUNTER</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

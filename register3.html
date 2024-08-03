@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Job Recommendation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            position: scroll;
+            background-repeat: no-repeat;
+            background-size: 1700px 1300px;
+            
+        }
+        h3{
+            padding-left: -200px;
+        }
+       label{
+             padding-left:20%;
+        }
+
+        .topnav {
+      overflow: hidden;
+      background-color: rgb(9, 10, 10);
+      position: scroll;
+      width: 100%;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-right:3px;
+      border-radius:25px;
+      border-style:unset;
+    }
+
+    .topnav a {
+      float: right;
+      display: block;
+      color: #f7f7f7;
+      text-align: center;
+      padding:15px 25px 14px 18px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: rgb(255, 255, 255);
+      border-radius:20px;
+      color: rgb(0, 0, 0);
+    }
+      .border{
+        border: 10px ridge black;
+      }  
+        .header {
+            
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .footer {
+            background-color: #636363;
+            width: 40.8cm;
+            position: absolute;
+            top:35cm;
+            left:-10cm;
+            text-align: center;
+        }
+        .button {
+  background-color: #49c04d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+    </style>
+<script>
+    function a(){ 
+        confirm("YOUR INFORMARION HAS BEEN SAVED");
+    }
+</script>
+</head>
+
+<body style="background-image: url(https://static.storyweaver.org.in/illustrations/58816/large/3.jpg);">
+<br>
+<div class="topnav">
+    
+    <a href="Register.html">Register</a>
+    <a href="queries.html">Queries</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About Us</a>
+    <a href="main.html">Home</a>
+
+</div>
+
+<br><br>
+<h1 style="text-align:center">REGISTRATION</h1>
+<div class="border" style="background:rgb(255, 255, 255);width:60%;height:170%;position:absolute;top:5cm;right:7cm;box-shadow: 50px 20px 50px #636363;">
+    <form action="payment.html" method="get">
+       <center> <h1>ABOUT YOU</h1></center>
+        <br><br>
+        <label><b>MOTHER TONGUE :</b></label><input type="text" placeholder="Mother tongue" style="width:40%;height:30px;position: absolute;right:100px;">
+        <br><br><br><br>
+        
+
+
+        <label><b>HOW  MANY LANGUAGES DO YOU KNOW ?</b></label><br> <input type="number" style="width:40%;height:30px;position: absolute;right:100px;">
+        <br><br><br><br>
+        
+
+
+
+        <label><b>PLEASE ENTER WHAT LANGUAGE YOU KNOW ?</b></label> <br>
+        <textarea placeholder="languages" style="width:40%;position: absolute;right:100px;"></textarea>
+        <br><br><br><br>
+       
+
+
+        <label><b>HOBBIES : </b></label> 
+        <textarea placeholder="Hobbies"style="width:40%;height:30px;position: absolute;right:100px;"></textarea>
+        <br><br><br><br>
+        
+
+        <label><b>SKILLS :</b></label><select name="qualification"style="width:40%;height:30px;position: absolute;right:100px;" >
+            <option value="">--Select--</option>
+            <option name="Data Analysis">Data Analysis</option>
+            <option name="Project Management">Project Management</option>
+            <option name="Problem Solving Skills">Problem Solving Skills</option>
+            <option name="Communication Skills">Communication Skills</option>
+            <option name="Computer Software and Application Knowledge">Computer Software and Application Knowledge
+            </option>
+            <option name="Administrative">Administrative</option>
+            <option name="Organization Skills">Organization Skills</option>
+            <option name="Teamwork">Teamwork</option>
+            <option name="Marketing">Marketing</option>
+            <option name="Mathematics">Mathematics</option>
+        </select><br><br><br><br>
+        
+
+        <label><b>ENTER SALARY THAT YOU ARE EXPECTING(PER MONTH)?</b></label><br> <input type="number" style="width:40%;height:30px;position: absolute;right:100px;" min="10000">
+        <br><br><br><br>
+        
+
+        <label><b>JOB DESIGNATION </b></label><input type="text" placeholder="Eg.Software developer" style="width:40%;height:30px;position: absolute;right:100px;">
+        <br><br><br><br>
+        
+
+        <lable><b>KNOWN COMPUTER LANGUAGES :</b></lable><input type="checkbox" value="c"> C
+        <input type="checkbox" value="c++"> C++
+        <input type="checkbox" value="HTML"> HTML
+        <input type="checkbox" value="Python">Python
+        <br><br><br><br>
+        
+
+        <h3><b>DOCUMANT UPDATES</b></h3><br>
+
+        <label><b>RESUME :</b></label><input type="file"></br>
+        <br><br>
+        
+
+        <label><b>SIGNATURE :</b></label><input type="file"></br>
+        <br><br>
+        
+
+        <label><b>COURSE CERTIFICATE :</b></label><input type="file"></br>
+        <br><br>
+        
+
+
+
+        <label><b>EXTRACURRICULAR ACTIVITIES : </b></label><input type="file"></br>
+     
+        <br><br>
+        <hr>
+
+        <input type="checkbox" value="give" style="position: absolute;left: 10px;"required><b style="position: absolute;left: 30px;">I,Sincerely declare that the facts provided in this resume are
+        true and
+        correct to the best of my knowledge.</b>
+        <br><br><br>
+        <input type="submit" value=" MAKE PAYMENT" class="button" style="position: absolute;right:10px">
+
+    </form>
+        <div class="footer">
+            <p id="copyright">Copyright &copy; 2022 by The JobHunter.</p>
+        </div>
+    </div>
+        </body>
+
+</html>

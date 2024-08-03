@@ -1,0 +1,210 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: #0084e9; */
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(9, 10, 10);
+  position: scroll;
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right:3px;
+  border-radius:25px;
+  border-style:unset;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f7f7f7;
+  text-align: center;
+  padding:15px 25px 14px 18px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  border-radius:20px;
+  color: rgb(0, 0, 0);
+}
+.container {
+  width: 60%;
+  min-width: 500px;
+  position: absolute;
+  top: 25cm;
+  right: -10%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 10px 10px 10000px rgba(0, 0, 0, 0.464); */
+}
+.wrapper {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  box-shadow: -10px 15px 25px rgba(0, 0, 50, 0.2);
+}
+.toggle,
+.content {
+  font-family: "Poppins", sans-serif;
+}
+.toggle {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #111130;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+}
+.content {
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+.whole {
+  background-color: #ffffff;
+}
+.box {
+  position: relative;
+  border-radius: 50px;
+  top: 0.7cm;
+  left: 7cm;
+  border: rgb(80, 239, 245) solid 3px;
+  /* box-shadow: 10px 10px 10000px rgba(0, 0, 0, 0.464); */
+  width: 1000px;
+  height: 10.75cm;
+  background-image: url(data:image/jpeg;base64,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);
+  border-radius: 47px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popup{
+
+    width:400px;
+     background:#fff;
+     border-radius:6px;
+     position:absolute;
+     top:0;
+     left:50%;
+     transform:translate(-50%,-50%) scale(0.1);
+     text-align:center;
+     padding:0 30px 30px;
+     color:#333;
+     visibility:hidden;I
+     transition: transform 0.4s,top 0.4s;
+ }
+                                          
+ .open-popup{
+     visibility: visible;
+     top:50%;
+     transform: translate(-50%,-50%) scale(1);
+ }
+ .popup img{
+    width:100px;
+    margin-top:-50px;
+     border-radius:50%;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+ }
+ .popup h2{
+     font-size:38px;
+     font-weight:500;
+    margin: 30px 0 10px;
+ }
+ .popup button{
+    width:100%;
+    margin-top:50px;
+    padding:10px0;
+    background:#6fd649;
+     color:#fff;
+     border:0;
+     outline:none;
+     font-size:18px;
+     border-radius:4px;
+     cursor:pointer;
+     box-shadow:05px 5px rgba(0,0,0,0.2);
+ }
+ form.example input[type=text] {
+    position: absolute;
+    left: 9cm;
+    top: 12cm;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    /* float: left; */
+    width: 39%;
+    background: #f1f1f1;
+  
+  }
+  
+  form.example button {
+    position: absolute;
+    left:24cm;
+    top: 12cm;
+   padding-bottom: 20px;
+    padding-left: 2px;
+    width: 16%;
+    padding: 10px;
+    background: #196bbd;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+ .col {    
+           position: absolute;
+           bottom: -17cm;
+           left: 19cm;
+            flex: 1%;
+            padding: 1px;
+           
+
+        }
+
+        .col button{
+            border: none;
+            height: 40px;
+            width: 110px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 2px 10px 25px black;
+        }
+        .footer {
+          background-color: #636363;
+          width: 50cm;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          position: absolute;
+          top:39cm;
+          left:-10cm;
+          text-align: center;
+      }

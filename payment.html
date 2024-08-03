@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media (min-aspect-ratio: 16/9) {
+        header {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+        header {
+            width: auto;
+            height: 100%;
+        }
+    }
+    header {
+        width: 100%;
+        min-height: 100%;
+        background-image: url("http://production-wordpress.unep-wcmc.org/content//uploads/2022/05/Nature-Commitments-background-scaled.jpeg");
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+
+    }
+
+    .payment {
+        background: white;
+        max-width: 800px;
+        min-height: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .left {
+        flex-basis: 50%;
+    }
+
+    .right {
+        flex-basis: 50%;
+
+
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    form input[type="text"] {
+        width: 100%;
+
+        padding: 0.5rem 0.7rem;
+        margin: 0.5rem 0rem;
+        outline: none;
+    }
+
+    #help {
+        display: flex;
+        margin-top: 0.5rem;
+    }
+
+    #help select {
+        padding: 0.5rem 0.7rem;
+
+    }
+
+    #help input[type="number"] {
+        padding: 0.5rem 0.7rem;
+        margin-left: 5px;
+
+    }
+
+    #help input[type="password"] {
+        padding: 0.5rem 0.7rem;
+        margin-left: 5px;
+        display: inline-block;
+    }
+
+    form input[type="button"] {
+        width: 100%;
+        padding: 0.9rem 1.5rem;
+        background: #34495e;
+        color: white;
+        border: none;
+        outline: none;
+        margin-top: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    form input[type="button"]:hover {
+        background: rgb(51, 146, 51);
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 200px;
+
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        background-color: aliceblue;
+
+        box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.5);
+        padding: 40px;
+        border: 2px solid black;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        overflow: hidden;
+
+    }
+
+    .options {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+    .topnav {
+      overflow: hidden;
+      background-color: rgb(9, 10, 10);
+      position: scroll;
+      width: 100%;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-right:3px;
+      border-radius:25px;
+      border-style:unset;
+    }
+
+    .topnav a {
+      float: right;
+      display: block;
+      color: #f7f7f7;
+      text-align: center;
+      padding:15px 25px 14px 18px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: rgb(255, 255, 255);
+      border-radius:20px;
+      color: rgb(0, 0, 0);
+    }
+    button {
+        margin: 3px;
+
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 5px;
+        border: none;
+
+
+    }
+
+    .container button:nth-child(1) {
+        background-color: red;
+    }
+
+    .container button:nth-child(2) {
+        background-color: green;
+    }
+
+    .container>img {
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    .container button:nth-child(1):hover {
+        cursor: pointer;
+        background-color: rgb(255, 0, 0);
+        transform: scale(1.05);
+    }
+
+    .container button>a,
+    .container button {
+        text-transform: uppercase;
+        color: aliceblue;
+        text-decoration: none;
+
+    }
+
+    .container button:nth-child(2):hover {
+        background-color: rgb(55, 184, 55);
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    .button {
+  background-color: #49c04d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+</style>
+
+<body><div class="topnav">
+    
+    <a href="Register.html">Register</a>
+    <a href="queries.html">Queries</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About Us</a>
+    <a href="main.html">Home</a>
+
+</div>
+<div>
+    <header id="head">
+        <div class="payment" id="payment">
+            <div class="left">
+                <h3>YOUR INFO</h3>
+                <form name="form1" action="success.html" method="POST">
+                    NAME<input type="text" placeholder="Enter name" id="name">
+                    <p style="color: red;display: none;font-size: small;margin: 0px;margin-left: 15px;" id="pname">name
+                        must be alphabetic and contains atleast 5 letters</p>
+                    E-MAIL<input type="text" placeholder="Example:jeevan@abc.com" id="email">
+                    <p style="color: red;display: none;font-size: small;margin: 0px;margin-left: 15px;" id="pmail"></p>
+                    ADDRESS<input type="text" placeholder="Enter address" id="add">
+                    <p style="color: red;display: none;font-size: small;margin: 0px;margin-left: 15px;" id="padd">
+                        address should have atleast 20 letters</p>
+                    CITY<input type="text" placeholder="Enter city" id="city">
+                    <p style="color: red;display: none;font-size: small;margin: 0px;margin-left: 15px;" id="pcity">
+                        please enter valid city.</p>
+                    <div id="help">
+                        <label>
+                            STATE
+                            <select id="se">
+                                <option value="0">choose state</option>
+                                <option>Tamil nadu</option>
+                                <option>rajasthan</option>
+                                <option>delhi</option>
+                                <option>telangana</option>
+                                <option>Andhra pradesh</option>
+
+                            </select>
+                            <p style="color: red;display: none;font-size: small;margin: 0px;margin-left: 2px;" id="pch">
+                                please choose
+                            </p>
+                        </label>
+
+                        <label>
+                            ZIPCODE
+                            <input type="number" placeholder="zipcode" id="zip">
+                            <p style="color: red;display: none;font-size: small;margin: 0px;margin-left: 2px;"
+                                id="pzip">please enter valid zipcode</p>
+
+
+                        </label>
+
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <h3>BANK INFO</h3>
+
+                <form>
+
+
+
+                    CREDIT CARD NUMBER<input type="text" placeholder="Enter card number" id="card">
+                    <p style="color: red;display: none;font-size: small;margin: 0px;margin-left: 2px;" id="pcard">please
+                        enter valid card number</p>
+                    EXPIRY MONTH<input type="text" placeholder="Enter month" id="mon">
+                    <p style="color: red;display: none;font-size: small;margin: 0px;margin-left: 2px;" id="pmon">please
+                        enter in format MM</p>
+
+                    <div id="help">
+                        <label>
+                            YEAR
+                            <select id="year">
+                                <option value="0">choose year</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+
+                            </select>
+                            <p style="color: red;display: none;font-size: small;margin: 0px;margin-left: 2px;"
+                                id="pyear">please choose</p>
+                        </label>
+                        <label>
+                            CVV
+                            <input type="password" id="pass" placeholder="***">
+                            <p style="color: red;display: none;font-size: small;margin: 0px;margin-left: 2px;"
+                                id="ppass">please enter valid CVV</p>
+                        </label>
+                    </div>
+                    <br>
+                    <img src="https://d28wu8o6itv89t.cloudfront.net/images/IDBISignatureVisaDebitCardjpg-1582703589152.jpeg"
+                        width="100px" height="70px">
+                    <img src="https://www.cardexpert.in/wp-content/uploads/2017/06/Corporation-Bank-Rupay-Credit-Card.png"
+                        width="100px" height="70px">
+                    <img src="https://www.idbibank.in/assets/images/card2.png"
+                        width="100px" height="70px"><br>
+
+                    <input type="button" value="Proceed to pay" onclick="validate()">
+
+                </form>
+            </div>
+        </div>
+        </div>
+        <form action="success.html" method="POST">
+        <div class="container" id="container" style="display: none;">
+            <img src="https://cdn.pixabay.com/photo/2014/04/02/10/38/sign-304093_1280.png" width="100px" height="100px">
+            <h3>ARE YOU SURE YOU WANT TO PAY</h3>
+            <div class="options"><button input="SUBMIT" >PAY</button>
+          <a style="position: absolute;left: 300px;" href="index.html" class="button">CANCEL</a>
+        </div>
+    </form>
+    </header>
+</div>
+
+
+
+    <script>
+        function validate() {
+            var regName = /^[a-zA-Z]+$/;
+            var c = 0;
+            var name = document.getElementById('name').value;
+            if (!regName.test(name) || name.length < 5) {
+
+                document.getElementById('pname').style.display = "block";
+                document.getElementById('name').style.border = "2px solid red";
+                c++;
+
+
+            } else {
+
+                document.getElementById('pname').style.display = "none";
+                document.getElementById('name').style.border = "2px solid green";
+
+            }
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (document.getElementById('email').value.length < 8) {
+                document.getElementById('email').style.border = "2px solid red";
+                document.getElementById('pmail').innerHTML = "please enter valid email address";
+                document.getElementById('pmail').style.display = "block";
+                c++;
+            }
+            else if (document.getElementById('email').value.match(mailformat)) {
+                document.getElementById('email').style.border = "2px solid green";
+                document.getElementById('pmail').style.display = "none";
+
+            }
+            else {
+                alert("You have entered an invalid email address!");
+                document.getElementById('pmail').style.display = "block"; document.getElementById('pmail').innerHTML = " email must contain @ and valid domain like .com,.edu";
+                document.getElementById('email').style.border = "2px solid red";
+                c++;
+
+            }
+            var address = document.getElementById('add').value;
+            if (address.length < 20) {
+                document.getElementById('padd').style.display = "block";
+                document.getElementById('add').style.border = "2px solid red";
+                c++;
+
+            } else {
+
+                document.getElementById('add').style.border = "2px solid green";
+                document.getElementById('padd').style.display = "none";
+            }
+            var city = document.getElementById('city').value;
+            if (city.length == 0) {
+                document.getElementById('pcity').style.display = "block";
+                document.getElementById('city').style.border = "2px solid red";
+                c++;
+            } else {
+                document.getElementById('city').style.border = "2px solid green";
+                document.getElementById('pcity').style.display = "none";
+
+            }
+            se = document.getElementById('se').value;
+            if (se == "0") {
+                document.getElementById('pch').style.display = "block";
+                document.getElementById('se').style.border = "2px solid red";
+                c++;
+
+            } else {
+                document.getElementById('se').style.border = "2px solid green";
+                document.getElementById('pch').style.display = "none";
+
+            }
+            var zip = document.getElementById('zip').value;
+            if (zip.length < 6 || zip.length > 6) {
+                document.getElementById('zip').style.border = "2px solid red"; c++; document.getElementById('pzip').style.innerHTML = "please enter valid zipcode"
+                document.getElementById('pzip').style.display = "block";
+            }
+            else if (regName.test(zip)) {
+                document.getElementById('pzip').style.innerHTML = "please enter num only";
+                document.getElementById('pzip').style.display = "block";
+                document.getElementById('zip').style.border = "2px solid red";
+                c++;
+
+            } else {
+                document.getElementById('zip').style.border = "2px solid green";
+                document.getElementById('pzip').style.display = "none";
+
+            }
+            var card = document.getElementById("card").value;
+            if (card.length != 16 || isNaN(card)) {
+                document.getElementById('card').style.border = "2px solid red";
+                document.getElementById('pcard').style.display = "block";
+                c++;
+            } else {
+                document.getElementById('card').style.border = "2px solid green";
+                document.getElementById('pcard').style.display = "none";
+
+            }
+            mon = document.getElementById('mon').value;
+            if (mon.length > 12 || mon.length < 1 || isNaN(card)) {
+                document.getElementById('mon').style.border = "2px solid red";
+                document.getElementById('pmon').style.display = "block";
+                c++;
+            } else {
+                document.getElementById('mon').style.border = "2px solid green";
+                document.getElementById('pmon').style.display = "none";
+            }
+            year = document.getElementById('year').value;
+            if (year == "0") {
+                document.getElementById('pyear').style.display = "block";
+                document.getElementById('year').style.border = "2px solid red";
+                c++;
+            } else {
+                document.getElementById('year').style.border = "2px solid green";
+                document.getElementById('pyear').style.display = "none";
+            }
+            pass = document.getElementById("pass").value;
+            if (pass.length != 3 || isNaN(pass)) {
+                document.getElementById('pass').style.border = "2px solid red";
+                document.getElementById('ppass').style.display = "block";
+                c++;
+            } else {
+                document.getElementById('pass').style.border = "2px solid green";
+                document.getElementById('ppass').style.display = "none";
+
+            }
+            if (c == 0) {
+                
+                    document.getElementById("container").style.display = "block";
+                    document.getElementById("container").style.filter = "blur(0px)";
+                    document.getElementById("payment").style.filter = "blur(2px)";
+                    document.getElementById("container").style.filter = "blur(0px)";
+            }
+        }
+    </script>
+</body>
+</html> 

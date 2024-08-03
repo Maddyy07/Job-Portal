@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body {
+        font-family: 'Roboto', sans-serif;
+        overflow: hidden;
+    }
+    
+    .tbhov1 {
+        cursor: pointer;
+        transition: 2s;
+        position: absolute;
+        align-content: center;
+        top: 15cm;
+        left: 4cm;
+        width: 20cm;
+        height: 20cm;
+        width: 100%;
+    }
+    
+    .tbhov2 {
+        cursor: pointer;
+        transition: 2s;
+        position: absolute;
+        align-content: center;
+        top: 15cm;
+        left: 27cm;
+        width: 20cm;
+    }
+    
+    .tbhov1:hover {
+        background-color: aquamarine;
+        opacity: 0.9;
+        transition: 0.5s;
+        box-shadow: 10px 10px 10px rgb(30, 9, 220);
+    }
+    
+    .tbhov2:hover {
+        background-color: aquamarine;
+        opacity: 0.9;
+        transition: 0.5s;
+        box-shadow: 10px 10px 10px rgb(30, 9, 220);
+    }
+    
+    .sk {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+    
+    .containerk {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .smoke-title {
+        position: relative;
+        font-size: 4vw;
+        color: #000;
+        margin: 40px;
+        max-width: 900px;
+        user-select: none;
+    }
+    
+    .smoke-title span {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .smoke-title span.active {
+        animation: smoke 1s linear forwards;
+        transform-origin: bottom;
+    }
+    
+    @keyframes smoke {
+        0% {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0) translateY(0) rotate(0deg);
+        }
+        50% {
+            opacity: 1;
+            pointer-events: none;
+        }
+        100% {
+            opacity: 0;
+            filter: blur(20px);
+            transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+        }
+    }
+</style>
+
+
+<body>
+
+    <video src="sk.mp4" muted loop autoplay style="height:100%;width:100%;">
+        
+            
+    </video>
+
+    <div class="sk">
+        <div class="lk">
+
+            <p style="position: absolute;font-size: 100px;top: 4cm;left: 16cm;color: rgb(255, 255, 255);">ABOUT HUNTERS</p>
+
+
+            <h1 style="position: absolute;top: 12cm;left: 2cm;color: rgb(255, 255, 255);">NUMBER OF APPOINTMENTS IN PAST YEARS</h1>
+
+            <table class="tbhov1" border="2" bgcolor="#cccccc" cellpadding="10" cellspacing="5" align="center" style="width: 700px;height:200px ;">
+                <tr>
+                    <th>S No.</th>
+                    <th>Year</th>
+                    <th>No Of Employees</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center">1.</td>
+                    <td style="text-align: center">2016</td>
+                    <td style="text-align: center">18</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">2.</td>
+                    <td style="text-align: center">2017</td>
+                    <td style="text-align: center">300</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">3.</td>
+                    <td style="text-align: center">2018</td>
+                    <td style="text-align: center">403</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">4.</td>
+                    <td style="text-align: center">2019</td>
+                    <td style="text-align: center">567</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">5.</td>
+                    <td style="text-align: center">2020</td>
+                    <td style="text-align: center">798</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">6.</td>
+                    <td style="text-align: center">2021</td>
+                    <td style="text-align: center">982</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">7.</td>
+                    <td style="text-align: center">2022(Till Now)</td>
+                    <td style="text-align: center">312</td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <center>
+            <h1 style="position: absolute;top: 12cm;left: 27cm;color: rgb(255, 255, 255);">TOP 5 RECRUITMENTS IN LAST YEAR</h1>
+        </center>
+
+        <table class="tbhov2" border="2" bgcolor="#cccccc" cellpadding="10" cellspacing="5" align="center">
+            <tr>
+                <th>S No.</th>
+                <th colspan="2" style="text-align: left">
+                    ..Name..||.......State.......
+                </th>
+                <th>Annual Income</th>
+                <th>Company</th>
+            </tr>
+            <tr>
+                <td style="text-align: center">1.</td>
+                <td style="text-align: center">Raj</td>
+                <td style="text-align: center">Rajasthan</td>
+                <td style="text-align: center">58LPA</td>
+                <td style="text-align: center">Tata Motors</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">2.</td>
+                <td style="text-align: center">Vinay</td>
+                <td style="text-align: center" rowspan="2">Kerala</td>
+                <td style="text-align: center">48LPA</td>
+                <td style="text-align: center">Reliance</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">3.</td>
+                <td style="text-align: center">Anurag</td>
+
+                <td style="text-align: center">20LPA</td>
+                <td style="text-align: center">ITC</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">4.</td>
+                <td style="text-align: center">Yalini</td>
+                <td style="text-align: center">Andra Pradesh</td>
+                <td style="text-align: center">35LPA</td>
+                <td style="text-align: center">Infosys</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">5.</td>
+                <td style="text-align: center">Kenny</td>
+                <td style="text-align: center">Delhi</td>
+                <td style="text-align: center">24LPA</td>
+                <td style="text-align: center">Wipro</td>
+            </tr>
+        </table>
+    </div>
+    <div class="containerk">
+        <h1 class="smoke-title">ABOUT US WEBPAGE</h1>
+    </div>
+    <script>
+        const title = document.querySelector('.smoke-title');
+
+        title.innerHTML = title.textContent.replace(/\S/g, "<span>$&</span>");
+
+        const letters = document.querySelectorAll('span');
+
+        for (let i = 0; i < letters.length; i++) {
+            letters[i].addEventListener("mouseover", function() {
+                letters[i].classList.add('active');
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
